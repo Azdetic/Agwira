@@ -1,89 +1,300 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
-    <!-- Metadata and links to stylesheets -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Anak Agung Gde Agung Wira Indramawan</title>
+    <title>Agung Wira - Information System Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Navigation bar -->
+    <!-- Header Section -->
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Post</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="logo">AW</div>
+        <nav>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="posts.html">Posts</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
     </header>
 
-    <!-- Main content -->
-    <main>
-      <!-- Profile section -->
-      <section>
-        <div>
-          <div>
-            <h1>Anak Agung Gde Agung Wira Indramawan</h1>
-            <p>Students at Telkom University</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Agung Wira</h1>
+            <h2>Information System Student</h2>
+            <p>
+              Passionate about data analytics, software development, and UI/UX
+              design.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn primary-btn">Contact Me</a>
+              <a href="#resume" class="btn secondary-btn">My Resume</a>
+            </div>
           </div>
-          <img src="Photos/PP/PP.jpg" alt="Profile" width="150" />
+          <div class="hero-image">
+            <div class="profile-image-container">
+              <!-- Replace with your actual profile image -->
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Agung Wira Profile"
+              />
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Personal Information section -->
-      <section>
-        <h2>Personal Information</h2>
-        <p>Nama Lengkap: Anak Agung Gde Agung Wira Indramawan</p>
-        <p>Email: agungindramawan@outlook.com</p>
-        <p>Lokasi: Bandung, Indonesia</p>
-      </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-info">
+            <h3>Personal Information</h3>
+            <ul class="info-list">
+              <li><i class="fas fa-user"></i> <span>Name:</span> Agung Wira</li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>Email:</span> agungwira@student.telkomuniversity.ac.id
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Location:</span> Bandung, Indonesia
+              </li>
+            </ul>
+          </div>
+          <div class="about-text">
+            <p>
+              I am a dedicated Information System student at Telkom University
+              with a keen interest in data analytics and software development. I
+              am constantly looking for ways to apply my academic knowledge to
+              solve real-world technological challenges.
+            </p>
+            <p>
+              My goal is to leverage technology and information systems to drive
+              innovation and efficiency in organizations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Experience section -->
-      <section>
-        <h2>Experience</h2>
-        <ul>
-          <li>OSIS (2019-2020)</li>
-          <li>Panitia MPls (2019)</li>
-          <li>BuSINESS PLAN AIS 2024 (2024)</li>
-        </ul>
-      </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experience</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Business Plan Competition - AIS 2024</h3>
+              <span class="date">2024</span>
+              <p>
+                Developed and presented a comprehensive business plan for a
+                sustainable product, incorporating market analysis, financial
+                forecasting, and implementation strategy.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>MPLS Committee</h3>
+              <span class="date">2022</span>
+              <p>
+                Organized and facilitated orientation activities for incoming
+                students, coordinating with multiple teams to ensure a smooth
+                introduction to university life.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>OSIS (Student Council) Member</h3>
+              <span class="date">2019-2021</span>
+              <p>
+                Served as an active member of the student council, organizing
+                school events and representing student interests to school
+                administration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Skills section -->
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Pengembangan diri</li>
-          <li>Visualizing business procces</li>
-          <li>bertanggung jawab</li>
-          <li>Analytic skills</li>
-          <li>UI/UX</li>
-          <li>SAP</li>
-        </ul>
-      </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+          <div class="skill-group">
+            <h3>Business Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Visualizing Business Process</span>
+              <span class="skill-tag">Analytic Skills</span>
+              <span class="skill-tag">SAP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Technical Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">UI/UX Design</span>
+              <span class="skill-tag">Microsoft Office Suite</span>
+              <span class="skill-tag">Data Visualization</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Self Development</span>
+              <span class="skill-tag">Team Leadership</span>
+              <span class="skill-tag">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Education section -->
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>SMA Negeri 1 Gianyar (2019 - 2022)</li>
-          <li>Telkom University (2023 - NOW)</li>
-        </ul>
-      </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <div class="section-title">
+          <h2>Education</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="education-items">
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <h3>Telkom University</h3>
+              <p class="degree">Bachelor of Information System</p>
+              <p class="year">2023 - Present</p>
+              <p class="description">
+                Focusing on data management, system analysis, software
+                development, and information technology infrastructure.
+              </p>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="education-details">
+              <h3>SMA Negeri 1 Gianyar</h3>
+              <p class="degree">High School Diploma</p>
+              <p class="year">2019 - 2022</p>
+              <p class="description">
+                Focused on social studies with emphasis on economics and
+                business fundamentals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Language section -->
-      <section>
-        <h2>Language</h2>
-        <ul>
-          <li>INGGRIS</li>
-          <li>BAHASA INDONESIA</li>
-        </ul>
-      </section>
-    </main>
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+      <div class="container">
+        <div class="section-title">
+          <h2>Languages</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="language-items">
+          <div class="language-item">
+            <div class="language-info">
+              <h3>Bahasa Indonesia</h3>
+              <p>Native</p>
+            </div>
+            <div class="language-progress">
+              <div class="language-bar">
+                <div class="language-level" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="language-item">
+            <div class="language-info">
+              <h3>English</h3>
+              <p>Professional Working Proficiency</p>
+            </div>
+            <div class="language-progress">
+              <div class="language-bar">
+                <div class="language-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>agungwira@student.telkomuniversity.ac.id</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Bandung, Indonesia</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-      <p>© 2024 Anak Agung Gde Agung Wira Indramawan. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; 2024 Agung Wira. All Rights Reserved.</p>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
